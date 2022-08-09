@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IzP-Io-Zif">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pagina Amarela-->
+        <scene sceneID="t88-EW-H5J">
+            <objects>
+                <viewController id="haJ-SH-xmq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O0Q-59-vqs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cyL-Vn-EjU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pagina Amarela" image="square.and.arrow.up.fill" catalog="system" id="tMG-5G-YsT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1uE-eO-yfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="260"/>
+        </scene>
+        <!--Tela Origem View Controller-->
+        <scene sceneID="LIe-yT-Vl7">
+            <objects>
+                <viewController id="95W-uu-j3g" customClass="TelaOrigemViewController" customModule="AulaStoryBoardCEFETTarde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xq8-Ue-4RG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite Aqui" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-wk-oRk">
+                                <rect key="frame" x="59" y="271" width="256" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="0cs-Ng-laa"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HwK-T2-1ea">
+                        <barButtonItem key="rightBarButtonItem" title="Navegar" id="OeT-nV-iRR">
+                            <connections>
+                                <segue destination="g5L-1Y-SXm" kind="show" identifier="segueTelaVerde" id="GUd-ZG-ByB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="OrigemTestField" destination="Cig-wk-oRk" id="6Kb-9r-GPV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CmS-Kb-Whu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="644" y="-405.24737631184411"/>
+        </scene>
+        <!--Voltar-->
+        <scene sceneID="JZd-3I-vSq">
+            <objects>
+                <viewController id="g5L-1Y-SXm" customClass="NovaTelaDestinoViewController" customModule="AulaStoryBoardCEFETTarde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aqz-n7-pJv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AEt-bt-qZV">
+                                <rect key="frame" x="99" y="283" width="177" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="369-PL-Oo5"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Voltar" id="dLC-zS-2rU">
+                        <barButtonItem key="backBarButtonItem" title="Voltar" id="5rR-HJ-Jd4"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="novaInfoDestinoLabel" destination="AEt-bt-qZV" id="vS2-M6-fz4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Wp-Fg-w39" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1495.2" y="-405.24737631184411"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="9pZ-Ya-X8y">
+            <objects>
+                <tabBarController id="IzP-Io-Zif" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="9bj-Gf-QVV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="khh-l6-UZn" kind="relationship" relationship="viewControllers" id="kPE-OS-GV7"/>
+                        <segue destination="haJ-SH-xmq" kind="relationship" relationship="viewControllers" id="lfe-Wt-cU0"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="uNf-kb-gLS"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCc-RH-moC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1246" y="-73"/>
+        </scene>
+        <!--Pagina Vermelha-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AulaStoryBoardCEFETTarde" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Pagina Vermelha" image="tray.and.arrow.up" catalog="system" id="eKl-CH-sLV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295" y="951"/>
+        </scene>
+        <!--Pagina Verde-->
+        <scene sceneID="Mit-4C-bhJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="khh-l6-UZn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Pagina Verde" image="square.and.arrow.up" catalog="system" id="aX4-3C-mMu"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aDM-Vc-Wa3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="95W-uu-j3g" kind="relationship" relationship="rootViewController" id="pQv-Aw-xcb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hNA-v3-9Pc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-295.19999999999999" y="-405.24737631184411"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
+        <image name="tray.and.arrow.up" catalog="system" width="64" height="56"/>
+    </resources>
+</document>
